@@ -1,5 +1,6 @@
 const wrap = document.querySelector('.content')
 let items = document.querySelectorAll('.content .item')
+
 const createDivs = (arr) => 
 {
     const len = arr.length
@@ -34,15 +35,30 @@ const handleSpeed = () =>
     })
 }
 
-const sortRun = (arr) => 
-{
+const sortRun = (arr) => {
     let flag = true
-
+    var tempNum = 1
+    
     const btnBubbleSort = $('.button-bubble-sort')
     btnBubbleSort.addEventListener('click', function()
     {
         if(flag)
         {
+            strNum = document.getElementById("numbers").value
+            arr = strNum.split(" ")
+            while(arr.length > tempNum)
+            {
+                var elem = document.createElement("div")
+                elem.className = "item"
+
+                wrap.insertBefore(elem,items[0])
+
+                items = document.querySelectorAll('.content .item')
+
+                tempNum ++
+            }
+            createDivs(arr)
+            
             btnBubbleSort.classList.add('active')
             BubbleSort(arr, function() 
             {
@@ -58,6 +74,21 @@ const sortRun = (arr) =>
     {
         if(flag)
         {
+            strNum = document.getElementById("numbers").value
+            arr = strNum.split(" ")
+            while(arr.length > tempNum)
+            {
+                var elem = document.createElement("div")
+                elem.className = "item"
+
+                wrap.insertBefore(elem,items[0])
+
+                items = document.querySelectorAll('.content .item')
+
+                tempNum ++
+            }
+            createDivs(arr)
+            
             btnInsertSort.classList.add('active')
             InsertSort(arr, function() 
             {
@@ -73,6 +104,21 @@ const sortRun = (arr) =>
     {
         if(flag)
         {
+            strNum = document.getElementById("numbers").value
+            arr = strNum.split(" ")
+            while(arr.length > tempNum)
+            {
+                var elem = document.createElement("div")
+                elem.className = "item"
+
+                wrap.insertBefore(elem,items[0])
+
+                items = document.querySelectorAll('.content .item')
+
+                tempNum ++
+            }
+            createDivs(arr)
+            
             btnBInsertSort.classList.add('active')
             BInsertSort(arr, function() 
             {
@@ -88,6 +134,21 @@ const sortRun = (arr) =>
     {
         if(flag)
         {   
+            strNum = document.getElementById("numbers").value
+            arr = strNum.split(" ")
+            while(arr.length > tempNum)
+            {
+                var elem = document.createElement("div")
+                elem.className = "item"
+
+                wrap.insertBefore(elem,items[0])
+
+                items = document.querySelectorAll('.content .item')
+
+                tempNum ++
+            }
+            createDivs(arr)
+         
             btnShellSort.classList.add('active')
             ShellSort(arr, function() 
             {
@@ -103,6 +164,21 @@ const sortRun = (arr) =>
     {
         if(flag)
         {   
+            strNum = document.getElementById("numbers").value
+            arr = strNum.split(" ")
+            while(arr.length > tempNum)
+            {
+                var elem = document.createElement("div")
+                elem.className = "item"
+
+                wrap.insertBefore(elem,items[0])
+
+                items = document.querySelectorAll('.content .item')
+
+                tempNum ++
+            }
+            createDivs(arr)
+            
             btnQuickSort.classList.add('active')
             QuickSort(arr, function() 
             {
@@ -118,6 +194,21 @@ const sortRun = (arr) =>
     {
         if(flag)
         {   
+            strNum = document.getElementById("numbers").value
+            arr = strNum.split(" ")
+            while(arr.length > tempNum)
+            {
+                var elem = document.createElement("div")
+                elem.className = "item"
+
+                wrap.insertBefore(elem,items[0])
+
+                items = document.querySelectorAll('.content .item')
+
+                tempNum ++
+            }
+            createDivs(arr)
+            
             btnSelectionSort.classList.add('active')
             SelectionSort(arr, function() 
             {
@@ -131,12 +222,12 @@ const sortRun = (arr) =>
 
 const __main = async () => 
 {
-    const arr = randomArr(50, 400, 15)
+    var strNum = document.getElementById("numbers").value
+    const arr = strNum.split(" ")
+   
     window.fps = 1000
-    createDivs(arr)
     handleSpeed()
-    sortRun(arr)
+    sortRun(arr， strNum)
 }
 
 __main()
-
