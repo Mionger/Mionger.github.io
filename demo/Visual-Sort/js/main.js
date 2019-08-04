@@ -35,7 +35,7 @@ const handleSpeed = () =>
     })
 }
 
-const sortRun = (arr) => {
+const sortRun = (arr, strNum) => {
     let flag = true
     var tempNum = 1
     
