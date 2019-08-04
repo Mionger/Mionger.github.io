@@ -227,7 +227,7 @@ const __main = async () =>
    
     window.fps = 1000
     handleSpeed()
-    sortRun(arr， strNum)
+    sortRun(arr, strNum)
 }
 
 __main()
