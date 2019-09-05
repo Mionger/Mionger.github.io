@@ -100,6 +100,7 @@ const ShellSort = async (arr, cb) =>
                 await sleep(window.fps)
                 if(arr[j] > arr[j + gap])
                 {
+                    // 出现问题，跨越元素交换
                     await swap(arr, j, j + gap)
                 }
                 items[j].classList.remove('active')
@@ -188,7 +189,7 @@ const QuickSort = async (arr, cb) =>
 
 const SelectionSort = async (arr, cb) =>
 {
-    const len = arr.length
+    const len = arr.length;
     var min = 0
 
     for(let i = 0; i < len; i++)
