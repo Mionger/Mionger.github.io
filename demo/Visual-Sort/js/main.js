@@ -1,8 +1,7 @@
 const wrap = document.querySelector('.content')
 let items = document.querySelectorAll('.content .item')
 
-const createDivs = (arr) => 
-{
+const createDivs = (arr) => {
     const len = arr.length
     for (let i = 0; i < len; i++) 
     {
@@ -16,16 +15,14 @@ const createDivs = (arr) =>
     }
 }
 
-const updateItems = (item, style) => 
-{
+const updateItems = (item, style) => {
     const { height, left, text } = style
     item.style.height = height
     item.style.left = left
     item.innerHTML = text
 }
 
-const handleSpeed = () => 
-{
+const handleSpeed = () => {
     $('.input-speed').addEventListener('change', 
     function(event) 
     {
@@ -38,7 +35,7 @@ const handleSpeed = () =>
 const sortRun = (arr, strNum) => {
     let flag = true
     var tempNum = 1
-    
+
     const btnBubbleSort = $('.button-bubble-sort')
     btnBubbleSort.addEventListener('click', function()
     {
@@ -220,11 +217,9 @@ const sortRun = (arr, strNum) => {
     })
 }
 
-const __main = async () => 
-{
+const __main = async () => {
     var strNum = document.getElementById("numbers").value
     const arr = strNum.split(" ")
-   
     window.fps = 1000
     handleSpeed()
     sortRun(arr, strNum)
