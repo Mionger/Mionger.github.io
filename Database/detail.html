@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="detail.css" />
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>菜谱信息</title>
+  </head>
+  <body></body>
+
+    <!-- logo -->
+    <div class="up">
+        <img id="icon" src="./images/logo.png" height="120;"/>
+    </div>
+
+    <!-- 信息表 -->
+    <div class="down">
+        <div id="container">  
+            <div class="search bar7">  
+                <!-- <form>  
+                    <input type="text" placeholder="请输入要搜索的内容" id="search-input">  
+                </form>   -->
+                <!-- <button class="submit-button" id="submit-button">提交</button> -->
+                <button class="back-button" id="back-button">返回</button> 
+                <button class="mark-button" id="mark-button">收藏</button> 
+                <table class="result-table" id='result-table'>
+                    <!-- <tr>
+                        <th>菜肴编号</th><th>菜肴名称</th><th>菜系</th>
+                    </tr>
+                    <tr>
+                        <td>Text 1A</td><td>Text 1B</td><td>Text 1C</td>
+                    </tr>
+                    <tr>
+                        <td>Text 2A</td><td>Text 2B</td><td>Text 2C</td>
+                    </tr> -->
+                </table>     
+                <table class="comment-table" id="comment-table">
+                    <!-- <tr>
+                        <th>test<br/>2020-05-28 11:28:26</th>
+                        <td><button >删除</button><br/>aaaaaa<br/>bbbbbb<br/></td>
+                    </tr> -->
+                </table>
+                <form>  
+                    <textarea name="comment" id="comment-input" placeholder="请输入评论内容" cols="100" rows="2"></textarea>
+                </form>
+                <button class="comment-button" id="comment-button">评论</button> 
+            </div>  
+        </div> 
+    </div>
+    
+    <script type="text/javascript" src="./tools.js"></script>
+    <script type="text/javascript" src="./database.js"></script>
+    <script type="text/javascript" src="./detail.js"></script>
+  </body>
+</html>

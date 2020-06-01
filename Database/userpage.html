@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="userpage.css" />
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <title>用户信息</title>
+    </head>
+    <body>   
+        <header>
+            <img src="./images/logo.png" class="logo">
+            <nav class="navigate-bar">
+                <div class="menu">
+                    <button class="update-button" id="update-button">编辑信息</button>
+                    <button class="home-button" id="home-button">主页</button>
+                    <button class="logout-button" id="logout-button">退出</button>
+                </div>
+            </nav>
+        </header>
+        <body>
+            <div>
+                <div class="item-bar">
+                    <div class="item-title">用户名</div>
+                    <div class="item-title">登录时间</div>
+                </div>
+
+                <div class="record-bars">
+                    <table class="result-table" id='result-table'>
+                        <!-- <tr>
+                            <th>菜肴编号</th><th>菜肴名称</th><th>菜系</th>
+                        </tr>
+                        <tr>
+                            <td>Text 1A</td><td>Text 1B</td><td>Text 1C</td>
+                        </tr>
+                        <tr>
+                            <td>Text 2A</td><td>Text 2B</td><td>Text 2C</td>
+                        </tr> -->
+                    </table>
+                    <!-- <table class="fancytable" > -->
+                    <!-- <tr class="headerrow"><td>欄位名稱一</td><td>欄位名稱二</td><td>欄位名稱三</td></tr>
+                    <tr  class="datarowodd"><td>資料一</td><td>欄位內容</td><td>欄位內容</td></tr>
+                    <tr  class="dataroweven"><td>資料一</td><td>欄位內容</td><td>欄位內容</td></tr>
+                    </table> -->
+                </div>
+
+                <div class="value-bar">
+                    <div class="item-value" id="uname-value">用户名</div>
+                    <div class="item-value" id="ulogin-value">登录时间</div>
+                </div>
+            </div>
+
+            <!-- <table id="line-1" style="height:260px;border-color:#ffffff;border-left-style:solid;border-width:5px;position:fixed;left:400px;top:250px;">
+                <tr><td valign="top"></td></tr>
+            </table> -->
+
+            <!-- <div class="record-bars">
+                <table class="fancytable" >
+                <tr class="headerrow"><td>欄位名稱一</td><td>欄位名稱二</td><td>欄位名稱三</td><td>欄位名稱四</td></tr>
+                <tr  class="datarowodd"><td>資料一</td><td>欄位內容</td><td>欄位內容</td><td>欄位內容</td></tr>
+                <tr  class="dataroweven"><td>資料一</td><td>欄位內容</td><td>欄位內容</td><td>欄位內容</td></tr>
+                </table>
+            </div> -->
+
+            <!-- <table id="line-2" style="height:260px;border-color:#ffffff;border-left-style:solid;border-width:5px;position:fixed;left:800px;top:250px;">
+                <tr><td valign="top"></td></tr>
+            </table> -->
+
+            <div class='file-bar' id='file-bar'>
+                <!-- <button class="create-button" id="create-button">新建菜谱</button> -->
+                <!-- <button class="mark-button" id="mark-button">查看收藏</button> -->
+                <button class="edit-button" id="edit-button">编辑菜谱</button>
+                <button class="delete-button" id="delete-button">删除菜谱</button>
+            </div>
+        </body>
+        <script type="text/javascript" src="database.js"></script>
+        <script type="text/javascript" src="tools.js"></script>
+        <script type="text/javascript" src="userpage.js"></script>
+    </body>
+</html>

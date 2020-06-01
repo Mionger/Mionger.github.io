@@ -1,0 +1,152 @@
+html { 
+    margin:0; 
+    padding:0; 
+    background-color:#e3f9fd;
+}
+
+* {box-sizing: border-box;}
+
+.logo {
+    width: 200px;
+    position: relative;
+    left: 20px;
+    top: 0px;
+}
+
+.navigate-bar {
+    position: fixed;
+    right: 60px;
+    top: 30px;
+    z-index: 999999;
+}
+
+.menu {
+    position: relative;
+}
+
+.update-button, .home-button, .logout-button, .create-button,.mark-button, .edit-button, .delete-button{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    font-family: "Avenir";
+    font-size: 1em;
+    outline: none;
+    border: none;  
+}
+
+.update-button {
+    position: relative;
+    right: 15px;
+    background-color: #ffffff;
+}
+
+.home-button {
+    position: relative;
+    right: 10px;
+    background-color: #ffffff;
+}
+
+.logout-button {
+    position: relative;
+    right: 5px;
+    background-color: #ffffff;
+}
+
+.item-bar {
+    position: fixed;
+    top: 250px;
+    left: 50px;
+}
+
+.item-title {
+    position: relative;
+    font-size: 1.3em;
+    color: #003371;
+    line-height: 300%;
+}
+
+.value-bar {
+    position: fixed;
+    top: 250px;
+    left: 250px;
+}
+
+.item-value {
+    position: relative;
+    font-size: 1.3em;
+    color: #27466d;
+    line-height: 300%;
+}
+
+.file-bar {
+    position: fixed;
+    top: 250px;
+    right: 50px;
+}
+
+.create-button {
+    position: relative;
+    right: 11px;
+    background-color: #ffffff;
+}
+
+.mark-button {
+    position: relative;
+    right: 5px;
+    background-color: #ffffff;
+}
+
+.edit-button {
+    position: relative;
+    right: 20px;
+    background-color: #ffffff;
+}
+
+.delete-button {
+    position: relative;
+    right: 15px;
+    background-color: #ffffff;
+}
+
+.record-bars {
+    position: relative;
+    top: 200px;
+    left:50px;
+    width: 300px;
+    /* border:1px solid #0066cc; padding:5px; */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+table.result-table {
+    font-family: verdana,arial,sans-serif;
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #999999;
+    border-collapse: collapse;
+    position: relative;
+    /* top: 20px;
+    left: 10px;
+    right: 10px; */
+    /* top: 30px; */
+    /* left:50px; */
+    /* right: 5px; */
+    width: 500px;
+}
+table.result-table th {
+    background:#b5cfd2;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #999999;
+}
+table.result-table td {
+    background:#e3f9fd;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #999999;
+    /* align:center; */
+}

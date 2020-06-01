@@ -1,0 +1,133 @@
+html { 
+    margin:0; 
+    padding:0; 
+    background-color:#e3f9fd;
+}
+
+* {  
+    box-sizing: border-box;  
+}  
+
+body {  
+    margin: 0;  
+    padding: 0;  
+    /* background: #292831;   */
+    background: #e3f9fd;  
+    font-weight: 500;  
+    font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;  
+}  
+#container {  
+    width: 500px;  
+    height: 820px;  
+    margin: 0 auto;  
+}  
+div.search {padding: 200px 0;}  
+form {  
+    position: relative;  
+    width: 300px;  
+    margin: 0 auto;  
+}  
+input{  
+    border: none;  
+    outline: none;  
+    width: 100%;  
+    height: 42px;  
+    padding-left: 13px;  
+    padding-right:46px;  
+}  
+/* button {  
+    height: 42px;  
+    width: 42px;  
+    cursor: pointer;  
+    position: absolute;  
+}   */
+
+.back-button {
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    font-family: "Avenir";
+    font-size: 1em;
+    outline: none;
+    position: relative;
+    top: 0px;
+    left: 200px;
+    right: 10px;
+    background-color: white;
+}
+
+/*搜索框4*/  
+.bar4 {background: #93c4dd;}  
+.bar4 form {  
+    background: #F9F0DA;
+    border-bottom: 2px solid #93c4dd;  
+}  
+.bar4 input{  
+    background: transparent;  
+}  
+/* .bar4 button {  
+    top: 0;  
+    right: 0;  
+}  
+.bar4 button:before {  
+    content: "\f178";  
+    font-family: FontAwesome;  
+    font-size: 20px;  
+    color: #93c4dd;  
+}   */
+
+.up {
+    width: 40%;
+    float:left;
+    /* height: 100px; */
+    background-color: #e3f9fd;
+    text-align: center;
+    /* position: relative; */
+    /* border: 1px solid #3B6273; */
+}
+.down {
+    width: 60%;
+    float:left;
+    height: 4000px;
+    background-color: #93c4dd;
+    /* border: 1px solid #3B6273; */
+}
+
+#icon {
+    position: relative;
+    top:180px;
+    width: 200px;
+    height: 200px;
+}
+
+table.result-table {
+    font-family: verdana,arial,sans-serif;
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #999999;
+    border-collapse: collapse;
+    position: relative;
+    /* top: 20px;
+    left: 10px;
+    right: 10px; */
+    top: 30px;
+    left:100px;
+    right: 5px;
+    width: 300px;
+}
+table.result-table th {
+    background:#b5cfd2;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #999999;
+}
+table.result-table td {
+    background:#e3f9fd;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #999999;
+    /* align:center; */
+}
